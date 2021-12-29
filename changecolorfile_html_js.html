@@ -1,0 +1,34 @@
+<HTML>
+    <HEAD>
+    <TITLE>COLOR CHANGING</TITLE>
+    <SCRIPT >
+    colors = new Array("red","orange","green","blue","brown","purple","gray","white")
+    
+    colorIndex = 0
+    
+    function changeColor() {
+     document.getElementById("demo").style.color = colors[colorIndex];
+     colorIndex = (colorIndex + 1) % colors.length;
+    }
+    let x;
+    function startColorChange() 
+    {
+    x = setInterval("changeColor()",1000);
+    }
+    function myStopFunction()
+    {
+        clearInterval(x);
+    }
+    </SCRIPT>
+    <p style="text-align: center;"><input type="button" name="clickb" value="Start" onclick="startColorChange()"></input></p>
+    
+    </HEAD>
+    <BODY BGCOLOR="red">
+    
+    <H1><P style="text-align: center" id ="demo"> HELLO WORLD</P></H1>
+    <p style="text-align: center;"><input type="button" name="click2" value="Stop" onclick= "myStopFunction()"></input></p>
+    </BODY>
+    </HTML>
+               
+           
+    
