@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head></head>
+<body>
+  <p style="text-align: center;">
+  Enter 1st variable A : <input type="number" name="num2" id="number" ><br>
+  Enter 2nd variable B : <input type="number" name="num3" id="number1"><br>
+  <input type="submit" name="clickb" value="Calculate" onclick="myFunction()"></input>
+<p id="demo" style="text-align:center"></p>
+<script>
+  function myFunction(){
+  var x = parseInt(document.getElementById("number").value);
+  var y = parseInt(document.getElementById("number1").value);
+  var result = x + y;
+  document.getElementById("demo").innerHTML = "Total number is : " +  result;
+}
+</script>
+</p>
+</body>
+</html>
